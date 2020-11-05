@@ -1,0 +1,23 @@
+img {
+    height: 5rem;
+    width: 10rem;
+}
+
+.part-option-container {
+    display: flex;
+    justify-content: center;
+}
+
+.part-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+}
+
+.part-option-container div { 
+    padding: 0 1rem;
+}
+
+.grid-1 {
+    margin-left: auto;
+}
