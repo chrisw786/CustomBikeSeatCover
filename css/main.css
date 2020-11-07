@@ -1,23 +1,41 @@
-img {
-    height: 5rem;
-    width: 10rem;
-}
-
+/* Inputs */
 .part-option-container {
     display: flex;
     justify-content: center;
-}
-
-.part-img-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 2rem;
 }
 
 .part-option-container div { 
     padding: 0 1rem;
 }
 
-.grid-1 {
+/* Image Heights */
+#side-color {
+    height: 40vh;
+    width: 40vw;
+}
+
+#top-color {
+    height: 40vh;
+    width: 40vw;
+}
+
+/* Image layout */
+.part-img-container {
+    display: grid;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.side-color-container {
+    margin: 0 auto;
+}
+
+.top-color-container {
+    position: absolute;
+    /* margin-top: 5vh; */
     margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }

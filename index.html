@@ -8,25 +8,30 @@
 </head>
 <body>
     <div class="part-option-container">
+
         <div>
-            <p>Grid 1</p>   
-            <select name="grid-1" onChange="dropDown('grid-1', 'grid-1', this.value)">
-                <option value="1">Orange</option>
-                <option value="2">Purple</option>
+            <p>Side Color</p>   
+            <select name="grid-1" onChange="changeImage('side-color', 'sideColor', this.value)">
+                <option value="1">Black</option>
             </select>
         </div>
+
         <div>
-            <p>Grid 2</p> 
-            <select name="grid-2" onChange="dropDown('grid-2', 'grid-2', this.value)">
-                <option value="2">Purple</option>
-                <option value="1">Orange</option>
+            <p>Top Color</p> 
+            <select name="grid-2" onChange="changeImage('top-color', 'topColor', this.value)">
+                <option value="1">Red</option>
+                <option value="2">Orange</option>
             </select>  
         </div>
     </div>
 
     <div class="part-img-container">
-        <div class="grid-1"><img src="img/grid-1/1.jpg" alt="" id="grid-1"></div>
-        <div class="grid-2"><img src="img/grid-2/2.jpg" alt="" id="grid-2"></div>
+        <div class="side-color-container">
+            <img src="img/sideColor/1.jpg" alt="" id="side-color">
+        </div>
+        <div class="top-color-container">
+            <img src="img/topColor/1.jpg" alt="" id="top-color">
+        </div>
     </div>
 
     <script src="js/main.js"></script>
