@@ -44,3 +44,12 @@
     right: 0;
     text-align: center;
 }
+
+@media (max-width: 600px) {
+    #side-color,
+    #top-color,
+    #rib-color {
+        height: 80vh;
+        width: 90vw;
+    }
+}
