@@ -8,29 +8,44 @@
 </head>
 <body>
     <div class="part-option-container">
-
         <div>
             <p>Side Color</p>   
-            <select name="grid-1" onChange="changeImage('side-color', 'sideColor', this.value)">
-                <option value="1">Black</option>
+            <select id="select-side-color" name="grid-1" onChange="changeImage(this.id)">
+                <option data-price="10" data-img="1" data-category="side-color">Black</option>
+                <option data-price="20" data-img="2" data-category="side-color">White</option>
             </select>
         </div>
 
         <div>
             <p>Top Color</p> 
-            <select name="grid-2" onChange="changeImage('top-color', 'topColor', this.value)">
-                <option value="1">Red</option>
-                <option value="2">Orange</option>
+            <select id="select-top-color" name="grid-2" onChange="changeImage(this.id)">
+                <option data-price="10" data-img="1" data-category="top-color">Red</option>
+                <option data-price="12.50" data-img="2" data-category="top-color">Navy</option>
             </select>  
+        </div>
+
+        <div>
+            <p>Rib Color</p> 
+            <select id="select-rib-color" name="grid-3" onChange="changeImage(this.id)">
+                <option data-price="10" data-img="1" data-category="rib-color">Black</option>
+                <option data-price="20" data-img="2" data-category="rib-color">Red</option>
+            </select>  
+        </div>
+        
+        <div>
+            <p>Total: $<span id="custom-seat-price">30</span></p>
         </div>
     </div>
 
     <div class="part-img-container">
         <div class="side-color-container">
-            <img src="img/sideColor/1.jpg" alt="" id="side-color">
+            <img src="img/side-color/1.jpg" alt="" id="side-color">
         </div>
         <div class="top-color-container">
-            <img src="img/topColor/1.jpg" alt="" id="top-color">
+            <img src="img/top-color/1.jpg" alt="" id="top-color">
+        </div>
+        <div class="rib-color-container">
+            <img src="img/rib-color/1.jpg" alt="" id="rib-color">
         </div>
     </div>
 

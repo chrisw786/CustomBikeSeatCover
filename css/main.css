@@ -9,13 +9,10 @@
 }
 
 /* Image Heights */
-#side-color {
-    height: 40vh;
-    width: 40vw;
-}
-
-#top-color {
-    height: 40vh;
+#side-color,
+#top-color,
+#rib-color {
+    height: 80vh;
     width: 40vw;
 }
 
@@ -32,9 +29,17 @@
 
 .top-color-container {
     position: absolute;
-    /* margin-top: 5vh; */
     margin-left: auto;
     margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.rib-color-container {
+    position: absolute;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
     left: 0;
     right: 0;
     text-align: center;
