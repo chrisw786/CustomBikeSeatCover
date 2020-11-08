@@ -4,7 +4,7 @@ var ribColorPrice = 10;
 var total = sideColorPrice + topColorPrice + ribColorPrice;
 
 function changeImage(id) {
-    document.getElementById(id).onclick = function () {
+    document.getElementById(id).onchange = function () {
         var select = document.getElementById('select');
         var options = this.querySelectorAll('#'+ id + ' option:checked');
     
@@ -23,4 +23,10 @@ function changeImage(id) {
 
         document.getElementById('custom-seat-price').innerHTML = total;
     }
+}
+
+window.onload = function() {
+    changeImage('select-side-color');
+    changeImage('select-top-color');
+    changeImage('select-rib-color');
 }
