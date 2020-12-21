@@ -1,48 +1,85 @@
-/* Inputs */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Nunito';
+    height:100%;
+    min-height: 100%;
+}
+
+/* Layout Control */
+.css-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.part-title-container {
+    margin: 1rem auto;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
 .part-option-container {
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.part-option-container div { 
-    padding: 0 1rem;
+.part-option-container div {
+    padding: 2rem;
 }
 
-/* Image Heights */
-#side-color,
-#top-color,
-#rib-color {
-    height: 80vh;
-    width: 40vw;
-}
-
-/* Image layout */
 .part-img-container {
     display: grid;
     margin-top: 2rem;
     width: 100%;
 }
 
+/* Image Heights */
+#side-color,
+#top-color,
+#rib-color {
+    margin-left: 10vw;
+    height: 60vh;
+    width: 30vw;
+}
+
 .side-color-container {
-    margin: 0 auto;
+    position: absolute;
+    /* margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center; */
 }
 
 .top-color-container {
     position: absolute;
-    margin-left: auto;
+    /* margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    text-align: center;
+    text-align: center; */
 }
 
 .rib-color-container {
     position: absolute;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
+    /* margin-left: auto;
+    margin-right: auto;
     left: 0;
     right: 0;
-    text-align: center;
+    text-align: center; */
 }
 
 @media (max-width: 600px) {

@@ -5,119 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Changing JS</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
-    <div class="part-option-container">
-        <div>
-            <p>Side Color</p>
-            <select id="select-side-color" name="">
-                <option data-price="10" data-img="1" data-category="side-color">Black</option>
-                <option data-price="10" data-img="2" data-category="side-color">Dark Grey</option>
-                <option data-price="10" data-img="3" data-category="side-color">Light Grey</option>
-                <option data-price="10" data-img="4" data-category="side-color">White</option>
-                <option data-price="15" data-img="5" data-category="side-color">Red</option>
-                <option data-price="15" data-img="6" data-category="side-color">Pink</option>
-                <option data-price="15" data-img="7" data-category="side-color">Purple</option>
-                <option data-price="15" data-img="8" data-category="side-color">Orange</option>
-                <option data-price="15" data-img="9" data-category="side-color">Yellow</option>
-                <option data-price="15" data-img="10" data-category="side-color">Green</option>
-                <option data-price="15" data-img="11" data-category="side-color">Sky Blue</option>
-                <option data-price="15" data-img="12" data-category="side-color">Dark Blue</option>
-                <option data-price="15" data-img="13" data-category="side-color">Navy</option>
-                <option data-price="15" data-img="14" data-category="side-color">Tan</option>
-            </select>
+    <div class="css-grid">
+        <div class="part-title-container">
+            <h2>Custom Seat Cover Prototype</h2>
+            <p>Developed by Christian Watson</p>
         </div>
+    
+        <div class="part-option-container">
+            <div>
+                <p>Side Color</p>
+                <select id="select-side-color" name="">
+                    <option data-price="10" data-img="1" data-category="side-color">Black</option>
+                    <option data-price="10" data-img="2" data-category="side-color">Dark Grey</option>
+                    <option data-price="10" data-img="3" data-category="side-color">Light Grey</option>
+                    <option data-price="10" data-img="4" data-category="side-color">White</option>
+                    <option data-price="15" data-img="5" data-category="side-color">Red</option>
+                    <option data-price="15" data-img="6" data-category="side-color">Pink</option>
+                    <option data-price="15" data-img="7" data-category="side-color">Purple</option>
+                    <option data-price="15" data-img="8" data-category="side-color">Orange</option>
+                    <option data-price="15" data-img="9" data-category="side-color">Yellow</option>
+                    <option data-price="15" data-img="10" data-category="side-color">Green</option>
+                    <option data-price="15" data-img="11" data-category="side-color">Sky Blue</option>
+                    <option data-price="15" data-img="12" data-category="side-color">Dark Blue</option>
+                    <option data-price="15" data-img="13" data-category="side-color">Navy</option>
+                    <option data-price="15" data-img="14" data-category="side-color">Tan</option>
+                </select>
+            </div>
+    
+            <div>
+                <p>Top Color</p>
+                <select id="select-top-color" name="">
+                    <option data-price="10" data-img="1" data-category="top-color">Red</option>
+                    <option data-price="10" data-img="2" data-category="top-color">Black</option>
+                    <option data-price="10" data-img="3" data-category="top-color">Dark Grey</option>
+                    <option data-price="10" data-img="4" data-category="top-color">Light Grey</option>
+                    <option data-price="15" data-img="5" data-category="top-color">White</option>
+                    <option data-price="15" data-img="6" data-category="top-color">Pink</option>
+                    <option data-price="15" data-img="7" data-category="top-color">Purple</option>
+                    <option data-price="15" data-img="8" data-category="top-color">Orange</option>
+                    <option data-price="15" data-img="9" data-category="top-color">Yellow</option>
+                    <option data-price="15" data-img="10" data-category="top-color">Green</option>
+                    <option data-price="15" data-img="11" data-category="top-color">Sky Blue</option>
+                    <option data-price="15" data-img="12" data-category="top-color">Dark Blue</option>
+                    <option data-price="15" data-img="13" data-category="top-color">Navy</option>
+                    <option data-price="15" data-img="14" data-category="top-color">Tan</option>
+                </select>
+            </div>
+    
+            <div>
+                <p>Rib Color</p>
+                <select id="select-rib-color" name="">
+                    <option data-price="10" data-img="1" data-category="rib-color">Black</option>
+                    <option data-price="10" data-img="2" data-category="rib-color">Dark Grey</option>
+                    <option data-price="10" data-img="3" data-category="rib-color">Light Grey</option>
+                    <option data-price="10" data-img="4" data-category="rib-color">White</option>
+                    <option data-price="15" data-img="5" data-category="rib-color">Red</option>
+                    <option data-price="15" data-img="6" data-category="rib-color">Pink</option>
+                    <option data-price="15" data-img="7" data-category="rib-color">Purple</option>
+                    <option data-price="15" data-img="8" data-category="rib-color">Orange</option>
+                    <option data-price="15" data-img="9" data-category="rib-color">Yellow</option>
+                    <option data-price="15" data-img="10" data-category="rib-color">Green</option>
+                    <option data-price="15" data-img="11" data-category="rib-color">Sky Blue</option>
+                    <option data-price="15" data-img="12" data-category="rib-color">Dark Blue</option>
+                    <option data-price="15" data-img="13" data-category="rib-color">Navy</option>
+                    <option data-price="15" data-img="14" data-category="rib-color">Tan</option>
+                    <option data-price="25" data-img="15" data-category="rib-color">Gold</option>
+                </select>
+            </div>
+    
+            <div>
+                <p>Tall Seat Cover</p>
+                <select id="select-seat-cover" name="">
+                    <option data-price="0" data-category="seat-cover">No</option>
+                    <option data-price="5" data-category="seat-cover">Yes (+$5)</option>
+                </select>
+            </div>
+    
+            <div>
+                <p>Knee Brace Reinforcement</p>
+                <select id="select-knee-brace" name="">
+                    <option data-price="0" data-category="knee-brace">No</option>
+                    <option data-price="10" data-category="knee-brace">Yes (+$10)</option>
+                </select>
+            </div>
+    
+            <div>
+                <p>Custom Front Patch</p>
+                <select id="select-front-patch" name="">
+                    <option data-price="0" data-category="front-patch">No</option>
+                    <option data-price="10" data-category="front-patch">Yes (+$10)</option>
+                </select>
+            </div>
+    
+            <div>
+                <p>Custom Side Patches</p>
+                <select id="select-side-patch" name="">
+                    <option data-price="0" data-category="side-patch">No</option>
+                    <option data-price="15" data-category="side-patch">Yes (+$15)</option>
+                </select>
+            </div>
 
-        <div>
-            <p>Top Color</p>
-            <select id="select-top-color" name="">
-                <option data-price="10" data-img="1" data-category="top-color">Red</option>
-                <option data-price="10" data-img="2" data-category="top-color">Black</option>
-                <option data-price="10" data-img="3" data-category="top-color">Dark Grey</option>
-                <option data-price="10" data-img="4" data-category="top-color">Light Grey</option>
-                <option data-price="15" data-img="5" data-category="top-color">White</option>
-                <option data-price="15" data-img="6" data-category="top-color">Pink</option>
-                <option data-price="15" data-img="7" data-category="top-color">Purple</option>
-                <option data-price="15" data-img="8" data-category="top-color">Orange</option>
-                <option data-price="15" data-img="9" data-category="top-color">Yellow</option>
-                <option data-price="15" data-img="10" data-category="top-color">Green</option>
-                <option data-price="15" data-img="11" data-category="top-color">Sky Blue</option>
-                <option data-price="15" data-img="12" data-category="top-color">Dark Blue</option>
-                <option data-price="15" data-img="13" data-category="top-color">Navy</option>
-                <option data-price="15" data-img="14" data-category="top-color">Tan</option>
-            </select>
+            <div>
+                <p>QTY</p>
+                <select id="select-side-patch" name="">
+                    <option data-multiplier="1" data-category="seat-qty">1</option>
+                    <option data-multiplier="2" data-category="seat-qty">2</option>
+                </select>
+            </div>
+            
+            <div>
+                <p><span class="badge badge-primary">Total: $<span id="custom-seat-price">0</span></span></p>
+            </div>
         </div>
-
-        <div>
-            <p>Rib Color</p>
-            <select id="select-rib-color" name="">
-                <option data-price="10" data-img="1" data-category="rib-color">Black</option>
-                <option data-price="10" data-img="2" data-category="rib-color">Dark Grey</option>
-                <option data-price="10" data-img="3" data-category="rib-color">Light Grey</option>
-                <option data-price="10" data-img="4" data-category="rib-color">White</option>
-                <option data-price="15" data-img="5" data-category="rib-color">Red</option>
-                <option data-price="15" data-img="6" data-category="rib-color">Pink</option>
-                <option data-price="15" data-img="7" data-category="rib-color">Purple</option>
-                <option data-price="15" data-img="8" data-category="rib-color">Orange</option>
-                <option data-price="15" data-img="9" data-category="rib-color">Yellow</option>
-                <option data-price="15" data-img="10" data-category="rib-color">Green</option>
-                <option data-price="15" data-img="11" data-category="rib-color">Sky Blue</option>
-                <option data-price="15" data-img="12" data-category="rib-color">Dark Blue</option>
-                <option data-price="15" data-img="13" data-category="rib-color">Navy</option>
-                <option data-price="15" data-img="14" data-category="rib-color">Tan</option>
-                <option data-price="25" data-img="15" data-category="rib-color">Gold</option>
-            </select>
-        </div>
-
-        <div>
-            <p>Tall Seat Cover</p>
-            <select id="select-seat-cover" name="">
-                <option data-price="0" data-category="seat-cover">No</option>
-                <option data-price="5" data-category="seat-cover">Yes (+$5)</option>
-            </select>
-        </div>
-
-        <div>
-            <p>Knee Brace Reinforcement</p>
-            <select id="select-knee-brace" name="">
-                <option data-price="0" data-category="knee-brace">No</option>
-                <option data-price="10" data-category="knee-brace">Yes (+$10)</option>
-            </select>
-        </div>
-
-        <div>
-            <p>Custom Front Patch</p>
-            <select id="select-front-patch" name="">
-                <option data-price="0" data-category="front-patch">No</option>
-                <option data-price="10" data-category="front-patch">Yes (+$10)</option>
-            </select>
-        </div>
-
-        <div>
-            <p>Custom Side Patches</p>
-            <select id="select-side-patch" name="">
-                <option data-price="0" data-category="side-patch">No</option>
-                <option data-price="15" data-category="side-patch">Yes (+$15)</option>
-            </select>
-        </div>
-        
-        <div>
-            <p>Total: $<span id="custom-seat-price">30</span></p>
+    
+        <div class="part-img-container">
+            <div class="side-color-container">
+                <img src="img/side-color/1.jpg" alt="" id="side-color">
+            </div>
+            <div class="top-color-container">
+                <img src="img/top-color/1.jpg" alt="" id="top-color">
+            </div>
+            <div class="rib-color-container">
+                <img src="img/rib-color/1.jpg" alt="" id="rib-color">
+            </div>
         </div>
     </div>
-
-    <div class="part-img-container">
-        <div class="side-color-container">
-            <img src="img/side-color/1.jpg" alt="" id="side-color">
-        </div>
-        <div class="top-color-container">
-            <img src="img/top-color/1.jpg" alt="" id="top-color">
-        </div>
-        <div class="rib-color-container">
-            <img src="img/rib-color/1.jpg" alt="" id="rib-color">
-        </div>
-    </div>
-
+    
     <script src="js/main.js"></script>
 </body>
 </html>
