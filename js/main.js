@@ -1,32 +1,59 @@
-var sideColorPrice = 10;
-var topColorPrice = 10;
-var ribColorPrice = 10;
-var total = sideColorPrice + topColorPrice + ribColorPrice;
+class CustomSeat {
+    getTotal() {
+        return this.getInputs().reduce((accumulator, input) => {
+            let price = this.getInputDataset(input).price;
+            return accumulator + parseFloat(price);
+        }, 0)
+    }
 
-function changeImage(id) {
-    document.getElementById(id).onchange = function () {
-        var select = document.getElementById('select');
-        var options = this.querySelectorAll('#'+ id + ' option:checked');
-    
-        document.getElementById(options[0].dataset.category).src = "img/" + options[0].dataset.category + "/" + options[0].dataset.img + ".jpg";
+    updateImages() {
+        return this.getInputs().forEach(input => {
+            let dataset = this.getInputDataset(input);
+            if(dataset.category && dataset.img) {
+                document.getElementById(dataset.category).src = "/img/" + dataset.category + "/" + dataset.img + ".jpg";
+            }
+        })
+    }
 
-        if(options[0].dataset.category == 'side-color') {
-            sideColorPrice = options[0].dataset.price;
-            total = parseFloat(sideColorPrice) + parseFloat(topColorPrice) + parseFloat(ribColorPrice);
-        } else if(options[0].dataset.category == 'top-color') {
-            topColorPrice = options[0].dataset.price;
-            total = parseFloat(sideColorPrice) + parseFloat(topColorPrice) + parseFloat(ribColorPrice);
-        } else if(options[0].dataset.category == 'rib-color') {
-            ribColorPrice = options[0].dataset.price;
-            total = parseFloat(sideColorPrice) + parseFloat(topColorPrice) + parseFloat(ribColorPrice);
-        }
+    updatePrice() {
+        document.getElementById('custom-seat-price').innerHTML = this.getTotal();
+    }
 
-        document.getElementById('custom-seat-price').innerHTML = total;
+    getInputDataset(input) {
+        let select = document.getElementById(input);
+        return select.options[select.selectedIndex].dataset
+    }
+
+    update() {
+        // update price
+        this.updatePrice();
+        // update image
+        this.updateImages();
+    }
+
+    bindChangeEvents() {
+        this.getInputs().forEach(input => {
+            document.getElementById(input).onchange = () => {
+                this.update();
+            }
+        })
+    }
+
+    getInputs() {
+        return [
+            'select-side-color',
+            'select-top-color',
+            'select-rib-color',
+            'select-seat-cover',
+            'select-knee-brace',
+            'select-front-patch',
+            'select-side-patch',
+        ]
     }
 }
 
 window.onload = function() {
-    changeImage('select-side-color');
-    changeImage('select-top-color');
-    changeImage('select-rib-color');
+    window.customSeat = new CustomSeat();
+    window.customSeat.bindChangeEvents();
+    window.customSeat.update();
 }
